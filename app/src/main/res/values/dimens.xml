@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="spacer_16">16dp</dimen>
+    <dimen name="spacer_10">10dp</dimen>
+    <dimen name="spacer_20">20dp</dimen>
+    <dimen name="spacer_30">30dp</dimen>
+    <dimen name="spacer_40">40dp</dimen>
+    <dimen name="spacer_5">5dp</dimen>
+    <dimen name="spacer_0">0dp</dimen>
+
+    <dimen name="default_font_size">14sp</dimen>
+</resources>
