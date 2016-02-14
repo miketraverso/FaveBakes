@@ -109,15 +109,15 @@ public class BakeryListingsActivity extends AppCompatActivity {
     private void setupActionBarTheme() {
 
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/lobster.ttf");
-        SpannableStringBuilder spannedTitlte = new SpannableStringBuilder(this.getTitle());
-        spannedTitlte.setSpan(new CustomTypefaceSpan("", font), 0, spannedTitlte.length(), Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+        SpannableStringBuilder spannedTitle = new SpannableStringBuilder(this.getTitle());
+        spannedTitle.setSpan(new CustomTypefaceSpan("", font), 0, spannedTitle.length(), Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         ActionBar actionBar = this.getSupportActionBar();
         if (actionBar != null) {
-            actionBar.setTitle(spannedTitlte);
+            actionBar.setTitle(spannedTitle);
         }
     }
 }
