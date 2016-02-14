@@ -7,25 +7,26 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import traversoft.com.listviewtorecyclerview.adapters.BakeryAdapter;
+import traversoft.com.listviewtorecyclerview.models.Bakery;
 import traversoft.com.listviewtorecyclerview.utilities.CustomTypefaceSpan;
 import traversoft.com.listviewtorecyclerview.R;
-import traversoft.com.listviewtorecyclerview.models.Bakery;
-import traversoft.com.listviewtorecyclerview.adapters.BakeryAdapter;
+import traversoft.com.listviewtorecyclerview.recyclerview.itemdecorators.ShadowVerticalSpaceItemDecorator;
+import traversoft.com.listviewtorecyclerview.recyclerview.itemdecorators.VerticalSpaceItemDecorator;
 
 public class BakeryListingsActivity extends AppCompatActivity {
 
-    private ListView listingsView;
+    private RecyclerView listingsView;
     private List<Bakery> bakeries;
     private Context context;
 
@@ -44,27 +45,30 @@ public class BakeryListingsActivity extends AppCompatActivity {
         // 3. Initialize the Bakery adapter
         BakeryAdapter adapter = new BakeryAdapter(this, R.layout.list_item_bakery, bakeries);
 
-        // 4. Inflate our ListView and set the adapter on it
-        listingsView = (ListView)findViewById(R.id.listings_view);
+        // 4. Initialize ItemAnimator, LayoutManager and ItemDecorators
+        DefaultItemAnimator itemAnimator = new DefaultItemAnimator();
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+        VerticalSpaceItemDecorator itemDecorator = new VerticalSpaceItemDecorator((int) getResources().getDimension(R.dimen.spacer_20));
+        ShadowVerticalSpaceItemDecorator shadowItemDecorator = new ShadowVerticalSpaceItemDecorator(this, R.drawable.drop_shadow);
+
+        // 5. Inflate our RecyclerView
+        listingsView = (RecyclerView)findViewById(R.id.listings_view);
+
+        // 6. For performance, tell OS RecyclerView won't change size
+        listingsView.setHasFixedSize(true);
+
+        // 7. Set the LayoutManager
+        listingsView.setLayoutManager(layoutManager);
+
+        // 8. Set the ItemDecorators
+        listingsView.addItemDecoration(shadowItemDecorator);
+        listingsView.addItemDecoration(itemDecorator);
+
+        // 9. Set the ItemAnimator
+        listingsView.setItemAnimator(itemAnimator);
+
+        // 10. Attach the adapter to RecyclerView
         listingsView.setAdapter(adapter);
-
-        // 5. Handle the click
-        listingsView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                ListView listView = (ListView) view.getParent();
-                if (listView != null) {
-
-                    Bakery bakery = bakeries.get(position);
-                    if (bakery != null) {
-
-                        Toast.makeText(context, "Clicked on " + bakery.bakeryName, Toast.LENGTH_SHORT).show();
-                    }
-                }
-            }
-        });
     }
 
     // Loads bakery data into List<Bakery>
