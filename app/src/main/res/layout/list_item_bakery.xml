@@ -34,7 +34,8 @@
             android:layout_toEndOf="@+id/logo_layout"
             android:gravity="center_vertical"
             android:textSize="@dimen/default_font_size"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#000000"/>
 
         <TextView
             android:id="@+id/bakery_address"
@@ -58,7 +59,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/bakery_phone"
             android:layout_toRightOf="@+id/logo_layout"
-            android:textSize="@dimen/default_font_size" />
+            android:textSize="@dimen/default_font_size"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"/>
 
         <TextView
             android:id="@+id/bakery_description"

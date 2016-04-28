@@ -6,7 +6,10 @@
     <dimen name="spacer_30">30dp</dimen>
     <dimen name="spacer_40">40dp</dimen>
     <dimen name="spacer_5">5dp</dimen>
+    <dimen name="spacer_4">4dp</dimen>
+    <dimen name="spacer_3">3dp</dimen>
     <dimen name="spacer_0">0dp</dimen>
 
     <dimen name="default_font_size">14sp</dimen>
+    <dimen name="small_font">13sp</dimen>
 </resources>

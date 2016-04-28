@@ -19,10 +19,8 @@ public class VerticalSpaceItemDecorator extends RecyclerView.ItemDecoration {
                                RecyclerView parent,
                                RecyclerView.State state) {
 
-        // 1. Determine if we want to add a spacing decorator
         if (parent.getChildAdapterPosition(view) != parent.getAdapter().getItemCount() - 1) {
 
-            // 2. Set the bottom offset to the specified height
             outRect.bottom = verticalSpaceHeight;
         }
     }
