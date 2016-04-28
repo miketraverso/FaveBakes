@@ -2,17 +2,17 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
           android:layout_width="match_parent"
-          android:layout_height="match_parent"
+          android:layout_height="wrap_content"
           android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/bakery_info"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:padding="@dimen/spacer_5"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:padding="@dimen/spacer_5">
 
         <RelativeLayout
             android:id="@+id/logo_layout"
@@ -31,41 +31,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacer_10"
+            android:layout_toEndOf="@+id/logo_layout"
             android:gravity="center_vertical"
             android:textSize="@dimen/default_font_size"
-            android:layout_toEndOf="@+id/logo_layout" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/bakery_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/bakery_name"
-            android:textSize="@dimen/default_font_size"
-            android:layout_toRightOf="@+id/logo_layout" />
+            android:layout_toRightOf="@+id/logo_layout"
+            android:textSize="@dimen/default_font_size" />
 
         <TextView
             android:id="@+id/bakery_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/bakery_address"
-            android:textSize="@dimen/default_font_size"
-            android:layout_toRightOf="@+id/logo_layout" />
+            android:layout_toRightOf="@+id/logo_layout"
+            android:textSize="@dimen/default_font_size" />
 
         <TextView
             android:id="@+id/bakery_website"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/bakery_phone"
-            android:textSize="@dimen/default_font_size"
-            android:layout_toRightOf="@+id/logo_layout" />
+            android:layout_toRightOf="@+id/logo_layout"
+            android:textSize="@dimen/default_font_size" />
 
         <TextView
             android:id="@+id/bakery_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/default_font_size"
             android:layout_below="@id/bakery_website"
-            android:layout_marginBottom="@dimen/spacer_10" />
+            android:layout_marginBottom="@dimen/spacer_10"
+            android:textSize="@dimen/default_font_size" />
 
     </RelativeLayout>
 
