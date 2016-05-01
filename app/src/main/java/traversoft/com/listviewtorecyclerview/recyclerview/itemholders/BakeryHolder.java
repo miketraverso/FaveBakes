@@ -26,6 +26,7 @@ public class BakeryHolder extends RecyclerView.ViewHolder implements View.OnClic
     @BindView(R.id.bakery_phone) protected TextView phone;
     @BindView(R.id.bakery_website) protected TextView website;
 
+
     private Bakery bakery;
     private Context context;
 
@@ -51,7 +52,7 @@ public class BakeryHolder extends RecyclerView.ViewHolder implements View.OnClic
     }
 
     // 3. Handle clicks on the bakery website
-    @OnClick (R.id.bakery_website)
+    @OnClick(R.id.bakery_website)
     public void launchWebsite(TextView url) {
 
         String websiteUrl = url.getText().toString();
@@ -62,7 +63,6 @@ public class BakeryHolder extends RecyclerView.ViewHolder implements View.OnClic
             context.startActivity(browserIntent);
         }
     }
-
 
     @Override
     public void onClick(View v) {
