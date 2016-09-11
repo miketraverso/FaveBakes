@@ -11,6 +11,10 @@ public class Bakery {
     public String address;
     public Bitmap logo;
 
+    public Bakery () {
+
+    }
+
     public Bakery(String bakeryName,
                   String description,
                   String phoneNumber,

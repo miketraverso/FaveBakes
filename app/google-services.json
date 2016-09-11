@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "181047675442",
+    "firebase_url": "https://favebakes.firebaseio.com",
+    "project_id": "favebakes",
+    "storage_bucket": "favebakes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181047675442:android:7850bd9905f5a641",
+        "android_client_info": {
+          "package_name": "traversoft.com.listviewtorecyclerview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181047675442-et7tulf5opop5iaveit9vn7it91h0uqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "traversoft.com.listviewtorecyclerview",
+            "certificate_hash": "C203DD19D5858D73E1C1112A8A8791685CEA9DA4"
+          }
+        },
+        {
+          "client_id": "181047675442-r2krujaku8gjhj2t0dr8obutrai1h5g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwA93jzh3FUXrgK5rV1jgR-DJnlZUWpuo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181047675442-r2krujaku8gjhj2t0dr8obutrai1h5g6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
