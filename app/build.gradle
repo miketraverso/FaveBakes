@@ -24,6 +24,7 @@ ext {
     supportLibVersion = '25.2.0'
     firebaseVersion = '10.0.1'
     butterknifeVersion = '8.0.0'
+    glideVersion = '3.7.0'
 }
 
 dependencies {
@@ -37,6 +38,8 @@ dependencies {
     compile "com.google.firebase:firebase-database:${firebaseVersion}"
     provided "org.projectlombok:lombok:1.12.6"
     apt "org.projectlombok:lombok:1.12.6"
+    compile "com.github.bumptech.glide:glide:${glideVersion}"
+    compile "com.android.support:support-v4:${supportLibVersion}"
 }
 
 apply plugin: 'com.google.gms.google-services'

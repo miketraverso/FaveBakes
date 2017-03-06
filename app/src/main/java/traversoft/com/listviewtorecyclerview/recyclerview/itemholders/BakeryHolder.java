@@ -10,6 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -42,6 +45,14 @@ public class BakeryHolder extends RecyclerView.ViewHolder implements View.OnClic
         this.phone.setText(bakery.getPhoneNumber());
         this.website.setText(bakery.getWebsiteUrl());
         this.description.setText(bakery.getDescription());
+        if (this.bakery.getImgUrl() != null && !this.bakery.getImgUrl().contentEquals("")) {
+            Glide.with(this.context)
+                    .load(this.bakery.getImgUrl())
+                    .centerCrop()
+                    .placeholder(R.mipmap.pie)
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .into(this.bakeryLogo);
+        }
     }
 
     @OnClick(R.id.bakery_website) public void launchWebsite(TextView url) {
