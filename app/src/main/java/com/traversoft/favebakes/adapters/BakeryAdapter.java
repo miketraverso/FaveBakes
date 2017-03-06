@@ -1,4 +1,4 @@
-package traversoft.com.listviewtorecyclerview.adapters;
+package com.traversoft.favebakes.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import traversoft.com.listviewtorecyclerview.models.Bakery;
-import traversoft.com.listviewtorecyclerview.R;
-import traversoft.com.listviewtorecyclerview.recyclerview.itemholders.BakeryHolder;
+import com.traversoft.favebakes.models.Bakery;
+import com.traversoft.favebakes.R;
+import com.traversoft.favebakes.recyclerview.itemholders.BakeryHolder;
 
 public class BakeryAdapter extends RecyclerView.Adapter<BakeryHolder> {
 

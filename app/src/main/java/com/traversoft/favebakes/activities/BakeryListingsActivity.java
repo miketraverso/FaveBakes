@@ -1,4 +1,4 @@
-package traversoft.com.listviewtorecyclerview.activities;
+package com.traversoft.favebakes.activities;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,6 +13,11 @@ import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.util.Log;
 
+import com.traversoft.favebakes.adapters.BakeryAdapter;
+import com.traversoft.favebakes.models.Bakery;
+import com.traversoft.favebakes.recyclerview.itemdecorators.ShadowVerticalSpaceItemDecorator;
+import com.traversoft.favebakes.recyclerview.itemdecorators.VerticalSpaceItemDecorator;
+import com.traversoft.favebakes.utilities.CustomTypefaceSpan;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,12 +30,8 @@ import java.util.List;
 import butterknife.BindBitmap;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import traversoft.com.listviewtorecyclerview.R;
-import traversoft.com.listviewtorecyclerview.adapters.BakeryAdapter;
-import traversoft.com.listviewtorecyclerview.models.Bakery;
-import traversoft.com.listviewtorecyclerview.recyclerview.itemdecorators.ShadowVerticalSpaceItemDecorator;
-import traversoft.com.listviewtorecyclerview.recyclerview.itemdecorators.VerticalSpaceItemDecorator;
-import traversoft.com.listviewtorecyclerview.utilities.CustomTypefaceSpan;
+import com.traversoft.favebakes.R;
+
 
 public class BakeryListingsActivity extends AppCompatActivity {
 

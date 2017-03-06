@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/spacer_10"
     android:background="@color/lightGray"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".activities.BakeryListingsActivity"
+    tools:context="com.traversoft.favebakes.activities.BakeryListingsActivity"
     tools:showIn="@layout/activity_bakery_listings">
     
 

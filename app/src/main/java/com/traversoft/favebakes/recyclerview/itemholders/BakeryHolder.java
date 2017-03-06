@@ -1,4 +1,4 @@
-package traversoft.com.listviewtorecyclerview.recyclerview.itemholders;
+package com.traversoft.favebakes.recyclerview.itemholders;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,8 +16,10 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import traversoft.com.listviewtorecyclerview.R;
-import traversoft.com.listviewtorecyclerview.models.Bakery;
+
+import com.traversoft.favebakes.models.Bakery;
+import com.traversoft.favebakes.R;
+
 
 public class BakeryHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 

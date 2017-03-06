@@ -1,4 +1,4 @@
-package traversoft.com.listviewtorecyclerview;
+package com.traversoft.favebakes;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

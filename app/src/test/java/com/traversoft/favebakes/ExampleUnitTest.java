@@ -1,4 +1,4 @@
-package traversoft.com.listviewtorecyclerview;
+package com.traversoft.favebakes;
 
 import org.junit.Test;
 

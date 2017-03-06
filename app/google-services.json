@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:181047675442:android:7850bd9905f5a641",
         "android_client_info": {
-          "package_name": "traversoft.com.listviewtorecyclerview"
+          "package_name": "com.traversoft.favebakes"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "181047675442-et7tulf5opop5iaveit9vn7it91h0uqo.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "traversoft.com.listviewtorecyclerview",
+            "package_name": "com.traversoft.favebakes",
             "certificate_hash": "C203DD19D5858D73E1C1112A8A8791685CEA9DA4"
           }
         },

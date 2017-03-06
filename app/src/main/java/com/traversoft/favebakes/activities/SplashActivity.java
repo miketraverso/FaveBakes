@@ -1,4 +1,4 @@
-package traversoft.com.listviewtorecyclerview.activities;
+package com.traversoft.favebakes.activities;
 
 
 import android.content.Intent;

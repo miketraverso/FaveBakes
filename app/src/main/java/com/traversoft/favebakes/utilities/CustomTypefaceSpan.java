@@ -1,4 +1,4 @@
-package traversoft.com.listviewtorecyclerview.utilities;
+package com.traversoft.favebakes.utilities;
 
 import android.graphics.Paint;
 import android.graphics.Typeface;

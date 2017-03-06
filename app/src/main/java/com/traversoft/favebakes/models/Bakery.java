@@ -1,4 +1,4 @@
-package traversoft.com.listviewtorecyclerview.models;
+package com.traversoft.favebakes.models;
 
 import android.graphics.Bitmap;
 
