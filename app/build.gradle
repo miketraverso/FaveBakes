@@ -35,6 +35,8 @@ dependencies {
     compile "com.jakewharton:butterknife:${butterknifeVersion}"
     apt "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
     compile "com.google.firebase:firebase-database:${firebaseVersion}"
+    provided "org.projectlombok:lombok:1.12.6"
+    apt "org.projectlombok:lombok:1.12.6"
 }
 
 apply plugin: 'com.google.gms.google-services'

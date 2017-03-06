@@ -41,35 +41,27 @@ public class BakeryHolder extends RecyclerView.ViewHolder implements View.OnClic
     }
 
     public void bindBakery(Bakery bakery) {
-
         this.bakery = bakery;
-        this.bakeryName.setText(bakery.bakeryName);
-        this.address.setText(bakery.address);
-        this.phone.setText(bakery.phoneNumber);
-        this.website.setText(bakery.websiteUrl);
-        this.description.setText(bakery.description);
-        this.bakeryLogo.setImageBitmap(bakery.logo);
+        this.bakeryName.setText(bakery.getBakeryName());
+        this.address.setText(bakery.getAddress());
+        this.phone.setText(bakery.getPhoneNumber());
+        this.website.setText(bakery.getWebsiteUrl());
+        this.description.setText(bakery.getDescription());
     }
 
-    // 3. Handle clicks on the bakery website
-    @OnClick(R.id.bakery_website)
-    public void launchWebsite(TextView url) {
+    @OnClick(R.id.bakery_website) public void launchWebsite(TextView url) {
 
         String websiteUrl = url.getText().toString();
         if (URLUtil.isValidUrl(websiteUrl)) {
-
             Intent browserIntent =
                     new Intent(Intent.ACTION_VIEW, Uri.parse(websiteUrl));
             context.startActivity(browserIntent);
         }
     }
 
-    @Override
-    public void onClick(View v) {
-
+    @Override public void onClick(View v) {
         if (this.bakery != null) {
-
-            Toast.makeText(this.context, "Clicked on " + this.bakery.bakeryName, Toast.LENGTH_SHORT ).show();
+            Toast.makeText(this.context, "Clicked on " + this.bakery.getBakeryName(), Toast.LENGTH_SHORT ).show();
         }
     }
 }
