@@ -18,7 +18,6 @@ import traversoft.com.listviewtorecyclerview.models.Bakery;
 
 public class BakeryHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    // 1. Define the bindings to the ViewHolder's views
     @BindView(R.id.bakery_logo) ImageView bakeryLogo;
     @BindView(R.id.bakery_name) protected TextView bakeryName;
     @BindView(R.id.bakery_address) protected TextView address;
@@ -26,16 +25,12 @@ public class BakeryHolder extends RecyclerView.ViewHolder implements View.OnClic
     @BindView(R.id.bakery_phone) protected TextView phone;
     @BindView(R.id.bakery_website) protected TextView website;
 
-
     private Bakery bakery;
     private Context context;
 
     public BakeryHolder(Context context, View itemView) {
-
         super(itemView);
         this.context = context;
-
-        // 2. Bind Butter knife to this view holder
         ButterKnife.bind(this, itemView);
         itemView.setOnClickListener(this);
     }
