@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
 
     defaultConfig {
         applicationId "traversoft.com.listviewtorecyclerview"
         minSdkVersion 19
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
@@ -20,16 +20,21 @@ android {
     }
 }
 
+ext {
+    supportLibVersion = '25.2.0'
+    firebaseVersion = '10.0.1'
+    butterknifeVersion = '8.0.0'
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.0.1'
-    compile 'com.android.support:design:23.0.1'
-    compile 'com.android.support:recyclerview-v7:+'
-    compile 'com.jakewharton:butterknife:8.0.0'
-    apt 'com.jakewharton:butterknife-compiler:8.0.0'
-    compile 'com.google.firebase:firebase-database:9.0.0'
-
+    compile "com.android.support:appcompat-v7:${supportLibVersion}"
+    compile "com.android.support:design:${supportLibVersion}"
+    compile "com.android.support:recyclerview-v7:${supportLibVersion}"
+    compile "com.jakewharton:butterknife:${butterknifeVersion}"
+    apt "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
+    compile "com.google.firebase:firebase-database:${firebaseVersion}"
 }
 
 apply plugin: 'com.google.gms.google-services'
