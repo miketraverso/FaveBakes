@@ -2,11 +2,13 @@ package com.traversoft.favebakes.models;
 
 import android.graphics.Bitmap;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
 public class Bakery {
 
+    @Getter @Setter private String bakeryId;
     @Getter @Setter private String bakeryName;
     @Getter @Setter private String description;
     @Getter @Setter private String phoneNumber;
@@ -16,18 +18,4 @@ public class Bakery {
     @Getter @Setter private String imgUrl;
 
     public Bakery () {}
-
-    public Bakery(String bakeryName,
-                String description,
-                String phoneNumber,
-                String websiteUrl,
-                String address,
-                String imgUrl) {
-        this.bakeryName = bakeryName;
-        this.description = description;
-        this.address = address;
-        this.phoneNumber = phoneNumber;
-        this.websiteUrl = websiteUrl;
-        this.imgUrl = imgUrl;
-    }
 }
