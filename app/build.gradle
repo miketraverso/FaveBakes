@@ -8,10 +8,10 @@ android {
 
     defaultConfig {
         applicationId "com.traversoft.favebakes"
-        minSdkVersion 19
+        minSdkVersion 23 // minimum 23 if. less than you'll get the ambiguity dialog asking if you want to use your app or the browser
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.0.2"
     }
     buildTypes {
         release {
@@ -53,4 +53,3 @@ dependencies {
     compile "com.android.support:support-v4:${supportLibVersion}"
 }
 
-apply plugin: 'com.google.gms.google-services'
