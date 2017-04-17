@@ -10,10 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <meta-data
-            android:name="asset_statements"
-            android:resource="@string/asset_statements"/>
-
         <activity
             android:name=".activities.SplashActivity"
             android:screenOrientation="portrait"
@@ -30,7 +26,6 @@
             android:exported="true">
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW"/>
-
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
 

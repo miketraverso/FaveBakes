@@ -2,5 +2,4 @@
     <string name="app_name">Fave Bakes</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_bakery_details">BakeryDetailsActivity</string>
-    <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"https://traversoft.com\",\n  }\n}]</string>
 </resources>
