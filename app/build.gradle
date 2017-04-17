@@ -8,10 +8,10 @@ android {
 
     defaultConfig {
         applicationId "com.traversoft.favebakes"
-        minSdkVersion 23 // minimum 23 if. less than you'll get the ambiguity dialog asking if you want to use your app or the browser
+        minSdkVersion 17
         targetSdkVersion 25
-        versionCode 3
-        versionName "1.0.2"
+        versionCode 4
+        versionName "1.0.3"
     }
     buildTypes {
         release {
